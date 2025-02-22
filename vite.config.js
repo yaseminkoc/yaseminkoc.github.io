@@ -10,5 +10,6 @@ export default defineConfig({
       ".jsx": "application/javascript",
     },
   },
+  base: "/vite-deploy-demo/",
 });
 
