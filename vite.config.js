@@ -10,6 +10,5 @@ export default defineConfig({
       ".jsx": "application/javascript",
     },
   },
-  base: "/dist",
 });
 
