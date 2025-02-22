@@ -1,20 +1,19 @@
-import React from 'react'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-import Hero from './components/hero/Hero'
-import Skills from './components/skills/Skills'
-import { useEffect } from 'react'
-import Experience from './components/experience/Experience'
-import Projects from './components/projects/Projects'
-import Contact from './components/contact/Contact'
-import Footer from './components/footer/Footer'
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Hero from "./components/hero/Hero.jsx";
+import Skills from "./components/skills/Skills.jsx";
+import { useEffect } from "react";
+import Experience from "./components/experience/Experience.jsx";
+import Projects from "./components/projects/Projects.jsx";
+import Contact from "./components/contact/Contact.jsx";
+import Footer from "./components/footer/Footer.jsx";
 
 export default function App() {
-  useEffect(()=>{
+  useEffect(() => {
     AOS.init({
       duration: 1000,
     });
-  },[]);
+  }, []);
   return (
     <main>
       <Hero />
@@ -24,5 +23,5 @@ export default function App() {
       <Contact />
       <Footer />
     </main>
-  )
+  );
 }
